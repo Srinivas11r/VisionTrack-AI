@@ -26,3 +26,6 @@ storage/outputs/*.csv
 .vscode/
 .idea/
 *.log
+*.pt
+backend/outputs/
+backend/yolov8n.pt
