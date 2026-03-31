@@ -1,0 +1,22 @@
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip = [".venv", "uploads", "storage"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = [".venv", "uploads", "storage"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+pythonpath = ["backend", "."]
+testpaths = ["tests"]
+addopts = "-q"
