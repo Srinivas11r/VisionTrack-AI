@@ -1,0 +1,3 @@
+@echo off
+echo Starting Streamlit Dashboard...
+streamlit run frontend/app.py
