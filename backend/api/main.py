@@ -47,8 +47,8 @@ jobs_lock = Lock()
 # Directories
 UPLOAD_DIR = settings.uploads_dir
 OUTPUT_DIR = settings.outputs_dir
-UPLOAD_DIR.mkdir(exist_ok=True)
-OUTPUT_DIR.mkdir(exist_ok=True)
+UPLOAD_DIR.mkdir(parents=True, exist_ok=True)
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 db = Database(settings.db_url)
 
